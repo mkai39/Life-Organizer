@@ -1,12 +1,11 @@
 # Life-Organizer
 CruzHacks2020 Entry
 
-Emmanuel Butor
+Emmanuel Butor (ebutor@ucsc.edu)
 
-Kaizena Ma
+Kaizena Ma (kma39@ucsc.edu)
 
-Xiao Qing Yu
+Xiao Qing Yu (xyu44@ucsc.edu)
 
-Alice Yu
-
+Alice Yu (ayu39@ucsc.edu)
 
