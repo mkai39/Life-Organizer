@@ -13,6 +13,7 @@
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="148dp"
         android:backgroundTintMode="add"
         app:defaultNavHost="true"
         app:layout_constraintHorizontal_bias="0.0"
@@ -27,7 +28,7 @@
         android:layout_width="213dp"
         android:layout_height="83dp"
         android:background="@color/colorPrimaryDark"
-        android:text="My Calendar"
+        android:text="@string/title_calendar"
         tools:text="My Calendar"
         android:textAllCaps="false"
         android:textSize="18sp"
@@ -44,7 +45,7 @@
         android:layout_height="115dp"
         android:background="@color/colorPrimaryDark"
         android:fontFamily="sans-serif-medium"
-        android:text="Today's Schedule"
+        android:text="@string/title_schedule"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textSize="30sp"
@@ -62,8 +63,7 @@
         android:layout_height="83dp"
         android:background="@color/colorPrimaryDark"
         android:fontFamily="sans-serif-medium"
-        android:text="Import Photo"
-        tools:text="Import Photo"
+        android:text="@string/title_import"
         android:textAllCaps="false"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/nav_host_fragment"
@@ -71,20 +71,21 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/nav_host_fragment"
-        app:layout_constraintVertical_bias="0.678" />
+        app:layout_constraintVertical_bias="0.678"
+        tools:text="Import Photo" />
 
     <Button
         android:id="@+id/Camera"
         android:layout_width="203dp"
         android:layout_height="116dp"
         android:background="@color/colorPrimaryDark"
-        android:text="Camera"
-        tools:text="Camera"
+        android:text="@string/title_camera"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.256" />
+        app:layout_constraintVertical_bias="0.256"
+        tools:text="Camera" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
