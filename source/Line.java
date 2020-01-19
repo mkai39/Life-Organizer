@@ -14,7 +14,7 @@ public class Line
     public String toString()
     {
         ArrayList<String> lines = new ArrayList<>();
-        lines.add("line: ");
+        lines.add("line: " + box);
         for (int i = 0; i < words.size(); i++)
         {
             lines.add("\n\t\t" + words.get(i));

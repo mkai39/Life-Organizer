@@ -35,6 +35,6 @@ public class BoundingBox
     @Override
     public String toString()
     {
-        return "BoundingBox: " + leftCoord + ", " + topCoord + ", " + width + ", " + height;
+        return "boundingBox: " + leftCoord + ", " + topCoord + ", " + width + ", " + height;
     }
 }
