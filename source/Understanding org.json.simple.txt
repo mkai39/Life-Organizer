@@ -1,0 +1,77 @@
+When you make a JSONObject, this is where you will put ( JSONObject.put(Object1, Object2) )
+    any objects. Generally, if you put a pair of Strings, it will look like this in the .json file:
+
+    "Object1" : "Object2"
+
+Likely, a JSONObject will create the first pair of braces (first opening brace and last closing brace)
+    that will encapsulate the entire file.
+
+When you make a Map to store into a JSONObject using put, the first thing is usually the
+    name of the type, and then the second thing is the map. For instance,
+    Map some_map = ("a1", "b1")  ("a2", "b2")   ("a3", "b3")   ("foo", "bar")
+
+    So then let's say we are calling these "Variables". So if we do put("Variables", some_map),
+    it will look like this:
+
+    "Variables":
+    {
+        "a1":"b1",
+        "a2":"b2",
+        "a3":"b3",
+        "foo":"bar"
+    }
+
+JSONArray is just an array of things. In a .json file, it will be represented with brackets.
+    I think you must use maps. What I mean is that you need to make a map, put things
+    into the map, and then use JSONArray.add(themap). It will look something like this:
+
+    "Array":
+    [
+        {
+            "map0-key0":"map0-val0",
+            "map0-key1":"map0-val1",
+            "map0-key2":"map0-val2"
+        },
+        {
+            "map1-key0":"map1-val0",
+            "map1-key1":"map1-val1"
+        }
+    ]
+
+With this in mind, I will address how the Azure OCR is making
+    .json files, as to figure out how to parse it.
+
+    First we have the general JSONObject that for the whole thing.
+
+    "regions" is a JSONArray.
+        - the first thing in the map is the boundingbox
+        - the second thing is another array called "lines"
+
+    "lines" is a JSONArray.
+        - this holds maps
+        - each map is considered a Line
+    
+    a Line is a map with 2 things
+        - 1st is the boundingbox
+        - second is a JSONArray for words
+    
+    "words" is a JSONArray
+        - holds maps (like usual)
+        - each element in "words" is a Word
+    
+    Word is a map
+        - it holds a boundingbox and
+        - the text that it has read
+    
+    In short
+    "regions" {boundingbox, linesarray} {boundingbox2, linesarray2}
+        - each element in this array is a section of the image being
+            analyzed for text
+    "lines" {boundingbox, wordsarray} {boundingbox2, wordsarray2}
+        - each element in this array is refers to a specific line in
+            the image
+    "words" {boundingbox, text} {boundingbox2, text2}
+        - each element in this array is a specific word in a line
+    
+    Each region contains lines, each line contains words, each word
+        contains text.

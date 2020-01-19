@@ -1,0 +1,291 @@
+{
+  "language": "en",
+  "textAngle": 0,
+  "orientation": "Up",
+  "regions": [
+    {
+      "boundingBox": "18,9,570,955",
+      "lines": [
+        {
+          "boundingBox": "18,9,196,42",
+          "words": [
+            {
+              "boundingBox": "18,9,24,42",
+              "text": "<"
+            },
+            {
+              "boundingBox": "52,17,34,25",
+              "text": "All"
+            },
+            {
+              "boundingBox": "100,17,114,26",
+              "text": "Inboxes"
+            }
+          ]
+        },
+        {
+          "boundingBox": "63,571,321,27",
+          "words": [
+            {
+              "boundingBox": "63,571,53,27",
+              "text": "Fall"
+            },
+            {
+              "boundingBox": "131,571,121,27",
+              "text": "Harvest"
+            },
+            {
+              "boundingBox": "265,571,119,27",
+              "text": "Festival"
+            }
+          ]
+        },
+        {
+          "boundingBox": "61,614,450,30",
+          "words": [
+            {
+              "boundingBox": "61,614,164,30",
+              "text": "September"
+            },
+            {
+              "boundingBox": "235,614,41,28",
+              "text": "29,"
+            },
+            {
+              "boundingBox": "290,614,26,23",
+              "text": "11"
+            },
+            {
+              "boundingBox": "331,614,98,24",
+              "text": "a.m.—5"
+            },
+            {
+              "boundingBox": "440,620,71,24",
+              "text": "p.m.,"
+            }
+          ]
+        },
+        {
+          "boundingBox": "62,652,445,30",
+          "words": [
+            {
+              "boundingBox": "62,653,87,25",
+              "text": "UCSC"
+            },
+            {
+              "boundingBox": "162,654,74,24",
+              "text": "Farm"
+            },
+            {
+              "boundingBox": "248,653,21,25",
+              "text": "&"
+            },
+            {
+              "boundingBox": "280,653,117,29",
+              "text": "Garden,"
+            },
+            {
+              "boundingBox": "410,652,97,29",
+              "text": "$0-$5/"
+            }
+          ]
+        },
+        {
+          "boundingBox": "62,700,103,24",
+          "words": [
+            {
+              "boundingBox": "62,700,103,24",
+              "text": "person"
+            }
+          ]
+        },
+        {
+          "boundingBox": "62,733,504,31",
+          "words": [
+            {
+              "boundingBox": "62,734,51,24",
+              "text": "Fun"
+            },
+            {
+              "boundingBox": "124,733,38,25",
+              "text": "for"
+            },
+            {
+              "boundingBox": "171,734,29,24",
+              "text": "all"
+            },
+            {
+              "boundingBox": "212,740,75,24",
+              "text": "ages,"
+            },
+            {
+              "boundingBox": "298,734,44,24",
+              "text": "the"
+            },
+            {
+              "boundingBox": "354,733,42,25",
+              "text": "UC"
+            },
+            {
+              "boundingBox": "408,733,81,25",
+              "text": "Santa"
+            },
+            {
+              "boundingBox": "500,733,66,25",
+              "text": "Cruz"
+            }
+          ]
+        },
+        {
+          "boundingBox": "62,773,507,29",
+          "words": [
+            {
+              "boundingBox": "62,774,108,24",
+              "text": "Harvest"
+            },
+            {
+              "boundingBox": "181,774,106,24",
+              "text": "Festival"
+            },
+            {
+              "boundingBox": "298,773,115,25",
+              "text": "features"
+            },
+            {
+              "boundingBox": "424,774,46,24",
+              "text": "live"
+            },
+            {
+              "boundingBox": "481,774,88,28",
+              "text": "music,"
+            }
+          ]
+        },
+        {
+          "boundingBox": "60,813,528,31",
+          "words": [
+            {
+              "boundingBox": "60,814,159,30",
+              "text": "workshops,"
+            },
+            {
+              "boundingBox": "230,813,63,25",
+              "text": "farm"
+            },
+            {
+              "boundingBox": "304,815,77,26",
+              "text": "tours,"
+            },
+            {
+              "boundingBox": "394,814,54,24",
+              "text": "kids"
+            },
+            {
+              "boundingBox": "459,813,84,28",
+              "text": "crafts,"
+            },
+            {
+              "boundingBox": "555,820,33,18",
+              "text": "an"
+            }
+          ]
+        },
+        {
+          "boundingBox": "61,854,491,30",
+          "words": [
+            {
+              "boundingBox": "61,854,76,30",
+              "text": "apple"
+            },
+            {
+              "boundingBox": "149,854,40,30",
+              "text": "pie"
+            },
+            {
+              "boundingBox": "199,855,109,26",
+              "text": "contest,"
+            },
+            {
+              "boundingBox": "320,854,51,24",
+              "text": "and"
+            },
+            {
+              "boundingBox": "384,854,77,24",
+              "text": "more!"
+            },
+            {
+              "boundingBox": "475,854,77,30",
+              "text": "Enjoy"
+            }
+          ]
+        },
+        {
+          "boundingBox": "60,893,514,31",
+          "words": [
+            {
+              "boundingBox": "60,894,43,24",
+              "text": "the"
+            },
+            {
+              "boundingBox": "115,894,94,30",
+              "text": "beauty"
+            },
+            {
+              "boundingBox": "219,893,27,25",
+              "text": "of"
+            },
+            {
+              "boundingBox": "254,894,43,24",
+              "text": "the"
+            },
+            {
+              "boundingBox": "307,893,62,25",
+              "text": "farm"
+            },
+            {
+              "boundingBox": "381,895,25,23",
+              "text": "at"
+            },
+            {
+              "boundingBox": "416,900,46,18",
+              "text": "our"
+            },
+            {
+              "boundingBox": "472,894,102,30",
+              "text": "biggest"
+            }
+          ]
+        },
+        {
+          "boundingBox": "66,933,421,31",
+          "words": [
+            {
+              "boundingBox": "66,934,74,30",
+              "text": "'open"
+            },
+            {
+              "boundingBox": "151,933,62,25",
+              "text": "farm"
+            },
+            {
+              "boundingBox": "226,934,96,24",
+              "text": "house\""
+            },
+            {
+              "boundingBox": "332,933,28,25",
+              "text": "of"
+            },
+            {
+              "boundingBox": "367,934,44,24",
+              "text": "the"
+            },
+            {
+              "boundingBox": "421,940,66,24",
+              "text": "year."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
