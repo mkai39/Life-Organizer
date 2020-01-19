@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
@@ -8,20 +8,23 @@
     android:background="@color/colorAccent"
     android:paddingTop="?attr/actionBarSize">
 
-    <fragment
-        android:id="@+id/nav_host_fragment"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="148dp"
-        android:backgroundTintMode="add"
-        app:defaultNavHost="true"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:navGraph="@navigation/mobile_navigation" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="main page"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/mainpage"/>
+
+
+    <Button
+        android:id="@+id/calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainpage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:text="calendar" />
 
     <Button
         android:id="@+id/My_Calendar"
@@ -31,13 +34,8 @@
         android:text="@string/title_calendar"
         tools:text="My Calendar"
         android:textAllCaps="false"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/nav_host_fragment"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/nav_host_fragment"
-        app:layout_constraintVertical_bias="0.678" />
+        android:textSize="18sp" />
+
 
     <Button
         android:id="@+id/Todays_Schedule"
@@ -49,29 +47,18 @@
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="@+id/nav_host_fragment"
-        app:layout_constraintEnd_toEndOf="@+id/nav_host_fragment"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/nav_host_fragment"
-        app:layout_constraintVertical_bias="1.0"
+
         tools:text="Today's Schedule" />
 
     <Button
         android:id="@+id/Import"
-        android:layout_width="213dp"
+        android:layout_width="150dp"
         android:layout_height="83dp"
         android:background="@color/colorPrimaryDark"
         android:fontFamily="sans-serif-medium"
         android:text="@string/title_import"
         android:textAllCaps="false"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/nav_host_fragment"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/nav_host_fragment"
-        app:layout_constraintVertical_bias="0.678"
         tools:text="Import Photo" />
 
     <Button
@@ -88,4 +75,4 @@
         app:layout_constraintVertical_bias="0.256"
         tools:text="Camera" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
