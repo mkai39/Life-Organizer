@@ -1,9 +1,12 @@
 package com.example.lifeorganizer;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -19,7 +22,12 @@ public class MainActivity extends AppCompatActivity {
     private Button import_photo;
     private Button schedule;
     private Button camera;
-   // private Button home;
+
+    ImageView imageView;
+    Uri imageUri;
+    private static int PICK_IMAGE = 100;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,10 +43,12 @@ public class MainActivity extends AppCompatActivity {
         });
 
         import_photo = (Button) findViewById(R.id.Import);
+        imageView = (ImageView)findViewById(R.id.imageView);
         import_photo.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View V){
-                openImport();
+                //   openImport();
+                openGallery();
             }
         });
 
@@ -59,14 +69,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-       /* home = (Button) findViewById(R.id.from_import);
-        home.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View V){
-                openHome();
-            }
-        });
-*/
 
     }
 
@@ -75,10 +77,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(calendar_intent);
     }
 
-    public void openImport(){
-        Intent import_intent = new Intent(this,Import_photo.class);
-        startActivity(import_intent);
-    }
 
     public void openSchedule(){
         Intent schedule_intent = new Intent(this,schedule.class);
@@ -90,10 +88,20 @@ public class MainActivity extends AppCompatActivity {
         startActivity(camera_intent);
     }
 
-    /*public void openHome(){
-        Intent home_intent = new Intent(this,MainActivity.class);
-        startActivity(home_intent);
+
+    private void openGallery() {
+        Intent photo_intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI);
+        startActivityForResult(photo_intent, PICK_IMAGE);
     }
-*/
+
+    @Override
+    protected void onActivityResult(int request, int result, Intent data) {
+        super.onActivityResult(request, result, data);
+        if (result == RESULT_OK && request == PICK_IMAGE) {
+            imageUri = data.getData();
+            imageView.setImageURI(imageUri);
+        }
+    }
+
 
 }
