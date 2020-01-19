@@ -31,4 +31,10 @@ public class BoundingBox
     {
         this(0, 0, 0, 0);
     }
+
+    @Override
+    public String toString()
+    {
+        return "BoundingBox: " + leftCoord + ", " + topCoord + ", " + width + ", " + height;
+    }
 }
