@@ -9,6 +9,16 @@ public class life_calendar{
 		System.out.println("Current Month is: "+life.get(Calendar.MONTH) +1);
 		System.out.println("Current Date is: "+life.get(Calendar.DATE) );
 	}
+
+	public void add_event_to_calendar(life_event){
+
+		return;
+	}
+
+	public get_todays_schedule(){
+
+		return;
+	}
 }
 
 

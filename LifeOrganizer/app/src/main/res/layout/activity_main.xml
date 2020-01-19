@@ -26,11 +26,14 @@
         android:id="@+id/schedule"
         android:layout_width="3000dp"
         android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
         android:background="@color/colorPrimaryDark"
         android:fontFamily="sans-serif-medium"
         android:text="@string/title_schedule"
-        android:layout_alignParentBottom="true"
-        android:textAllCaps="false" />
+        android:textAllCaps="false"
+        android:textColor="#D9F1EE"
+        android:textColorHint="#D9F1EE"
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/Import"
