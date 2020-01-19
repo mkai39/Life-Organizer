@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private Button import_photo;
     private Button schedule;
     private Button camera;
-   // private Button home;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,14 +59,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-       /* home = (Button) findViewById(R.id.from_import);
-        home.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View V){
-                openHome();
-            }
-        });
-*/
 
     }
 
@@ -89,11 +81,5 @@ public class MainActivity extends AppCompatActivity {
         Intent camera_intent = new Intent("android.media.action.IMAGE_CAPTURE");
         startActivity(camera_intent);
     }
-
-    /*public void openHome(){
-        Intent home_intent = new Intent(this,MainActivity.class);
-        startActivity(home_intent);
-    }
-*/
 
 }
