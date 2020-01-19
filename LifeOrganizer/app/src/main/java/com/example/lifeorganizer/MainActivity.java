@@ -1,6 +1,8 @@
 package com.example.lifeorganizer;
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -8,13 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
     private Button import_photo;
     private Button schedule;
     private Button camera;
-
     ImageView imageView;
     Uri imageUri;
     private static int PICK_IMAGE = 100;
@@ -90,18 +85,24 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void openGallery() {
-        Intent photo_intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI);
+        Intent photo_intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         startActivityForResult(photo_intent, PICK_IMAGE);
     }
 
     @Override
     protected void onActivityResult(int request, int result, Intent data) {
         super.onActivityResult(request, result, data);
-        if (result == RESULT_OK && request == PICK_IMAGE) {
+        if (result == RESULT_OK && request == PICK_IMAGE && null != data) {
             imageUri = data.getData();
-            imageView.setImageURI(imageUri);
+            String[] filePathColumn = { MediaStore.Images.Media.DATA };
+            Cursor cursor = getContentResolver().query(imageUri, filePathColumn, null, null, null);
+            cursor.moveToFirst();
+
+            int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
+            String picturePath = cursor.getString(columnIndex);
+            cursor.close();
+            imageView = (ImageView)findViewById(R.id.imgView);
+            imageView.setImageBitmap(BitmapFactory.decodeFile(picturePath));
         }
     }
-
-
 }

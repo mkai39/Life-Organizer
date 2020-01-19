@@ -35,15 +35,4 @@
         tools:srcCompat="@tools:sample/avatars[14]" />
 
 
-    <Button
-        android:id="@+id/from_import"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
-        android:shadowColor="#009688"
-        android:text=">"
-        android:textColor="#009688"
-        android:textSize="250px" />
-
-
 </RelativeLayout>

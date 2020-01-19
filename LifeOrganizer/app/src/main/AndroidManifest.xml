@@ -9,13 +9,12 @@
         android:roundIcon="@drawable/camera_button"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".schedule"></activity>
+        <activity android:name=".schedule" />
         <activity android:name=".Import_photo" />
         <activity android:name=".Calendar" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

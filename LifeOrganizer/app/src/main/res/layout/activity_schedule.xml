@@ -16,12 +16,5 @@
         android:text="Today's Schedule"
         android:textSize="150px" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        tools:srcCompat="@tools:sample/avatars[13]" />
-
 
 </RelativeLayout>
