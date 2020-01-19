@@ -7,6 +7,7 @@ import java.util.Iterator;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.lang.Integer;
+import java.io.PrintStream;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -17,6 +18,7 @@ import org.json.simple.parser.*;
  */
 public class OCRClient
 {
+    static Event ll = new Event();
     public static void main(String[] args) throws Exception
     {
         // parsing file
@@ -148,10 +150,61 @@ public class OCRClient
         }
 
         // At this point, all regions have been added to regionsList
-        //      so let's print all of our data out
-        for (int i = 0; i < regionsList.size(); i++)
+
+
+        // Hard-coded events that should be implemented more cleanly
+        Event movie = new Event();
+        movie.title = "Incredibles 2";
+        movie.month = "July";
+        movie.day = "13";
+
+        Event festival = new Event();
+        festival.title = "Fall Harvest Festival";
+        festival.month = "September";
+        festival.day = "29";
+        festival.startTime = "11 a.m.";
+        festival.endTime = "5 p.m.";
+
+        // Print the 2 events into a file
+        PrintStream ps = new PrintStream("events_file.txt");
+        ps.println(movie);
+        ps.println(festival);
+    }
+
+
+    // Private Event class to handle event days/times/etc
+    private static class Event
+    {
+        String title;
+        String year;
+        String month;
+        String day;
+        String startTime;
+        String endTime;
+
+        Event()
         {
-            System.out.println(regionsList.get(i));
+            title = "";
+            year = "";
+            month = "";
+            day = "";
+            startTime = "";
+            endTime = "";
+        }
+
+        @Override
+        public String toString()
+        {
+            String result = "Event: " + title + "\n" + year + " " + month + " " + day;
+            if (!startTime.equals(""))
+            {
+                result += " from " + startTime;
+                if (!endTime.equals(""))
+                {
+                    result += " until " + endTime;
+                }
+            }
+            return result;
         }
     }
 }

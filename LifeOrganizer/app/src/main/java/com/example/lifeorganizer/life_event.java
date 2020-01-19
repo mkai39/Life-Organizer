@@ -1,3 +1,4 @@
+package com.example.lifeorganizer;
 public class life_event{
 	int date, month, year;
 	String event_description;

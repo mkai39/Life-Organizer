@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Life Organizer</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="title_camera">Camera</string>
+    <string name="title_import">Import</string>
+    <string name="title_schedule">Today\'s\ Schedule</string>
+    <string name="title_calendar">My Calendar</string>
+
+
+</resources>
