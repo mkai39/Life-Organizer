@@ -7,6 +7,7 @@ public class life_event{
 		this.date = date;
 		this.month = month;
 		this.year = year;
+	    //this.time_start
 		this.event_description = event_description;
 
 		//this.picture; //stretch goal
