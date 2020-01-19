@@ -21,58 +21,41 @@
         android:id="@+id/calendar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/mainpage"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="0dp"
-        android:text="calendar" />
-
-    <Button
-        android:id="@+id/My_Calendar"
-        android:layout_width="213dp"
-        android:layout_height="83dp"
+        android:fontFamily="sans-serif-medium"
         android:background="@color/colorPrimaryDark"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
         android:text="@string/title_calendar"
-        tools:text="My Calendar"
-        android:textAllCaps="false"
-        android:textSize="18sp" />
-
+        android:textAllCaps="false" />
 
     <Button
-        android:id="@+id/Todays_Schedule"
-        android:layout_width="526dp"
-        android:layout_height="115dp"
+        android:id="@+id/schedule"
+        android:layout_width="3000dp"
+        android:layout_height="wrap_content"
         android:background="@color/colorPrimaryDark"
         android:fontFamily="sans-serif-medium"
         android:text="@string/title_schedule"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textSize="30sp"
-
-        tools:text="Today's Schedule" />
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false" />
 
     <Button
         android:id="@+id/Import"
-        android:layout_width="150dp"
-        android:layout_height="83dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="0dp"
         android:background="@color/colorPrimaryDark"
         android:fontFamily="sans-serif-medium"
         android:text="@string/title_import"
-        android:textAllCaps="false"
-        android:textSize="18sp"
-        tools:text="Import Photo" />
+        android:textAllCaps="false" />
 
     <Button
-        android:id="@+id/Camera"
-        android:layout_width="203dp"
-        android:layout_height="116dp"
+        android:id="@+id/camera"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/title_camera"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.256"
-        tools:text="Camera" />
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
