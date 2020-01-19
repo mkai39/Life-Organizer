@@ -9,12 +9,13 @@
     android:paddingTop="?attr/actionBarSize">
 
     <TextView
+        android:id="@+id/calendarpage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="150px"
-        android:text="My Calendar"
         android:layout_centerHorizontal="true"
-        android:id="@+id/calendarpage"/>
+        android:fontFamily="sans-serif"
+        android:text="My Calendar"
+        android:textSize="150px" />
 
     <CalendarView
         android:id="@+id/calendarView"

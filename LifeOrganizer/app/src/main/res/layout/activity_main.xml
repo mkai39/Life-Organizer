@@ -11,15 +11,14 @@
 
     <Button
         android:id="@+id/calendar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="145dp"
+        android:layout_height="62dp"
         android:layout_above="@+id/schedule"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="52dp"
-        android:layout_marginBottom="109dp"
-        android:background="@color/colorPrimaryDark"
+        android:layout_marginRight="21dp"
+        android:layout_marginBottom="104dp"
+        android:background="@drawable/button1"
         android:fontFamily="sans-serif-medium"
-        android:text="@string/title_calendar"
         android:textAllCaps="false" />
 
     <Button
@@ -37,15 +36,14 @@
 
     <Button
         android:id="@+id/Import"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="145dp"
+        android:layout_height="62dp"
         android:layout_above="@+id/schedule"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="52dp"
-        android:layout_marginBottom="109dp"
-        android:background="@color/colorPrimaryDark"
+        android:layout_marginLeft="21dp"
+        android:layout_marginBottom="104dp"
+        android:background="@drawable/button2"
         android:fontFamily="sans-serif-medium"
-        android:text="@string/title_import"
         android:textAllCaps="false" />
 
     <Button
