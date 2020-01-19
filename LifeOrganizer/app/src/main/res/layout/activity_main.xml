@@ -8,30 +8,24 @@
     android:background="@color/colorAccent"
     android:paddingTop="?attr/actionBarSize">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="main page"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/mainpage"/>
-
 
     <Button
         android:id="@+id/calendar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
-        android:background="@color/colorPrimaryDark"
+        android:layout_above="@+id/schedule"
         android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
+        android:layout_marginRight="52dp"
+        android:layout_marginBottom="109dp"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="sans-serif-medium"
         android:text="@string/title_calendar"
         android:textAllCaps="false" />
 
     <Button
         android:id="@+id/schedule"
         android:layout_width="3000dp"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:background="@color/colorPrimaryDark"
         android:fontFamily="sans-serif-medium"
         android:text="@string/title_schedule"
@@ -42,9 +36,10 @@
         android:id="@+id/Import"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/schedule"
         android:layout_alignParentLeft="true"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="0dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginBottom="109dp"
         android:background="@color/colorPrimaryDark"
         android:fontFamily="sans-serif-medium"
         android:text="@string/title_import"
@@ -52,10 +47,17 @@
 
     <Button
         android:id="@+id/camera"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@color/colorPrimaryDark"
-        android:text="@string/title_camera"
-        android:layout_centerHorizontal="true" />
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_above="@+id/schedule"
+        android:layout_alignTop="@+id/schedule"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="-499dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="249dp"
+        android:background="@drawable/camera_button"
+        android:layoutDirection="locale" />
 
 </RelativeLayout>

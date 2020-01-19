@@ -12,8 +12,20 @@
         android:id="@+id/import_photo_page"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="150px"
         android:layout_centerHorizontal="true"
-        android:text="import photo page" />
+        android:text="Import event" />
+
+
+    <TextView
+        android:id="@+id/import_photo_page2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/import_photo_page"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-55dp"
+        android:text="photo"
+        android:textSize="150px" />
 
     <ImageView
         android:id="@+id/imageView"
