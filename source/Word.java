@@ -8,4 +8,10 @@ public class Word
         this.text = text;
         this.box = box;
     }
+
+    @Override
+    public String toString()
+    {
+        return "text: " + "\"" + text + "\"" + "; " + box;
+    }
 }

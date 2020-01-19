@@ -22,10 +22,12 @@ public class MainActivity extends AppCompatActivity {
     private Button import_photo;
     private Button schedule;
     private Button camera;
+
     ImageView imageView;
     Uri imageUri;
     private static int PICK_IMAGE = 100;
-   // private Button home;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,14 +69,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-       /* home = (Button) findViewById(R.id.from_import);
-        home.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View V){
-                openHome();
-            }
-        });
-*/
 
     }
 
@@ -83,10 +77,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(calendar_intent);
     }
 
-/*    public void openImport(){
-        Intent import_intent = new Intent(this,Import_photo.class);
-        startActivity(import_intent);
-    } */
 
     public void openSchedule(){
         Intent schedule_intent = new Intent(this,schedule.class);
@@ -97,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
         Intent camera_intent = new Intent("android.media.action.IMAGE_CAPTURE");
         startActivity(camera_intent);
     }
+
 
     private void openGallery() {
         Intent photo_intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI);
@@ -112,10 +103,5 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    /*public void openHome(){
-        Intent home_intent = new Intent(this,MainActivity.class);
-        startActivity(home_intent);
-    }
-*/
 
 }
