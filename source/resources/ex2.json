@@ -1,0 +1,92 @@
+{
+  "language": "en",
+  "textAngle": 0,
+  "orientation": "Up",
+  "regions": [
+    {
+      "boundingBox": "125,30,258,119",
+      "lines": [
+        {
+          "boundingBox": "125,30,258,11",
+          "words": [
+            {
+              "boundingBox": "125,30,22,11",
+              "text": "IT'S"
+            },
+            {
+              "boundingBox": "150,30,40,11",
+              "text": "GOING"
+            },
+            {
+              "boundingBox": "195,30,15,11",
+              "text": "TO"
+            },
+            {
+              "boundingBox": "214,30,14,11",
+              "text": "BE"
+            },
+            {
+              "boundingBox": "232,30,17,11",
+              "text": "AN"
+            },
+            {
+              "boundingBox": "254,30,68,11",
+              "text": "INCREDIBLE"
+            },
+            {
+              "boundingBox": "326,30,57,11",
+              "text": "SUMMER!"
+            }
+          ]
+        },
+        {
+          "boundingBox": "254,58,74,15",
+          "words": [
+            {
+              "boundingBox": "254,64,3,3",
+              "text": "•"
+            },
+            {
+              "boundingBox": "261,58,67,15",
+              "text": "PIXAR"
+            }
+          ]
+        },
+        {
+          "boundingBox": "127,65,254,65",
+          "words": [
+            {
+              "boundingBox": "127,65,221,65",
+              "text": "INCREDIBLES"
+            },
+            {
+              "boundingBox": "356,69,25,60",
+              "text": "2"
+            }
+          ]
+        },
+        {
+          "boundingBox": "195,137,118,12",
+          "words": [
+            {
+              "boundingBox": "195,137,13,12",
+              "text": "IN"
+            },
+            {
+              "boundingBox": "212,137,53,12",
+              "text": "CINEMAS"
+            },
+            {
+              "boundingBox": "270,137,26,12",
+              "text": "JULY"
+            },
+            {
+              "boundingBox": "300,137,13,12",
+              "text": "13"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
